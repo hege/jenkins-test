@@ -1,5 +1,8 @@
 pipeline {
     agent any
+    environment {
+        ENV1 = credentials('some-global-secret')
+    }
     stages {
         stage('Build') {
             steps {
