@@ -11,6 +11,7 @@ pipeline {
                     echo "Multiline shell steps works too"
                     ls -lah
                 '''
+                sh 'echo "ENV1 is $ENV1"'
             }
         }
     }
